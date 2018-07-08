@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+}
+
+.LoginPage__container {
+    background:linear-gradient(0deg,rgba(255,255,255,0.2),rgba(0,0,0,0.5)), url(/assets/images/bg_login.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .LoginPage {
+        box-shadow: 0 0 20px -3px #FFF;
+    }
+
+}

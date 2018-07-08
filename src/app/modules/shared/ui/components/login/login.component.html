@@ -1,0 +1,55 @@
+<div class="card LoginComponent">
+  <div class="card-body LoginComponent__body">
+    <div class="row py-3">
+      <div class="col-md-6">
+          <h3>
+            <u>Log in</u>
+          </h3>
+      </div>
+      <div class="col-md-6 text-right">
+          <p>or <a routerLink="/auth/register">create an account.</a></p>
+      </div>
+    </div>
+    <!-- <div class="row my-2">
+      <div class="col-md-12">
+          <button type="submit" class="btn btn-primary btn-block btn-addon__container">
+            <span class="btn-addon">
+              <i class="fab fa-google"></i>
+            </span>
+            <span class="btn-text">Google</span>
+          </button>  
+      </div>
+      <div class="col-md-12 text-center my-2 text--gray">
+        <div class="hr--label">
+          OR
+        </div>
+      </div>
+    </div> -->
+    <form novalidate autocomplete="false">
+      <div class="form-group">
+        <label for="userEmailAddress">Email address</label>
+        <input autocomplete="false" type="email" name="userEmail" #userEmail="ngModel" class="form-control" id="userEmailAddress" [(ngModel)]="user.email" placeholder="Enter email" minlength="4" required>
+      </div>
+      <div class="form-group">
+        <div class="row m-0 justify-content-between">
+          <label for="userPassword">Password</label>
+          <a routerLink="/auth/password-change">Forgot Password</a>
+        </div>
+        <input type="password" name="userPassword" class="form-control" id="userPassword" placeholder="Password" [(ngModel)]="user.password">
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6 col-xs-12 text-left">
+          <div class="form-check">
+            <input [(ngModel)]="checkMe" name="agreement" type="checkbox" class="form-check-input" id="checkOut">
+            <label class="form-check-label" for="checkOut">
+              <small>Check me out</small>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 text-right">
+            <button type="submit" class="btn btn-primary" (click)="onFormSubmit()">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

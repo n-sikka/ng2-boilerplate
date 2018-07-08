@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "@app/shared/": ["./src/app/modules/shared/"],
+      "@app/feature/": ["./src/app/modules/feature/"],
+      "@app/shared/ui/": ["./src/app/modules/shared/ui/ui.module"],
+      "@app/shared/core/": ["./src/app/modules/shared/core/core.module"],
+      "@app/shared/service/": ["./src/app/modules/shared/service/service.module"],
+      "@app/feature/auth/": ["./src/app/modules/feature/auth/auth.module"],
+      "@app/feature/jobs/": ["./src/app/modules/feature/jobs/jobs.module"],
+      "@app/feature/provider/": ["./src/app/modules/feature/provider/provider.module"],
+      "@app/feature/user/": ["./src/app/modules/feature/user/user.module"],
+      "@app/feature/dashboard/": ["./src/app/modules/feature/dashboard/dashboard.module"],
+      "@app/feature/configuration/": ["./src/app/modules/feature/configuration/configuration.module"]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+// BASE
+$color-primary: #3690DE;
+$color-secondary: #29CCa2;
+$color-accent: #976391;
+
+$theme-purple: #575DA9;
+$theme-red: #FD6776;
+$theme-green: #8FC33A;
+$theme-yellow: #FEDC3D;
+
+$theme-black: #333C4F;
+$theme-dark-gray: #6F7480;
+$theme-gray: #C5C7CD;
+$theme-lightgray: #F3F5F8;
+$theme-white: #FFFFFF;
+
+$base-font-size: 16px;
+$base-border-radius: 0;
+
+// UTILITY
+$font-black: $theme-black;
+$font-grey: $theme-dark-gray; 
+
+$btn-min-width: 5rem;
+$link-color: lighten($color-primary, 10%);
+
+/** BREAKPOINTS - used with mixin @for-screen
+========================================================================== */
+
+$mobile-sm: 320px;
+$mobile: 425px; //targetting android phones as standard
+$tablet: 768px;
+$desktop: 1366px;
+$super-desktop: 1920px;
+
+
+
+/*****************************BOOTSTRAP OVERRIDE***************************/
+$theme-colors: (
+    "primary":    $color-primary,
+    "secondary":  $color-secondary,
+    "accent":     $color-accent,
+    "success":    $theme-green,
+    "info":       $theme-purple,
+    "warning":    $theme-yellow,
+    "danger":     $theme-red,
+    "light":      $theme-lightgray,
+    "dark":       $theme-black
+);
+
+// BOOTSTRAP VARIABLES
+$enable-gradients: false;
+$enable-shadows: false;
+
+// BUTTONS
+
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-box-shadow:              inset 0 1px 0 rgba($theme-white, .15), 0 1px 1px rgba($theme-black, .075) !default;
+$btn-font-weight:             normal !default;
+$btn-disabled-opacity:        .65 !default;
+$btn-active-box-shadow:       inset 0 3px 5px rgba($theme-black, .125) !default;
+
+$btn-border-width:            1px !default;
+
+
+$btn-link-disabled-color:     $theme-gray !default;
+
+$btn-block-spacing-y:         .5rem !default;
+
+// COLORS
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             $theme-black !default;
+$yiq-text-light:            $theme-white !default;

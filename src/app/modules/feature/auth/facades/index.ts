@@ -1,0 +1,1 @@
+export { AuthFacade } from './authFacade/auth-facade.service';

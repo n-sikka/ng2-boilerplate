@@ -1,0 +1,14 @@
+.RegisterComponent {
+    min-width: 25rem;
+
+    .RegisterComponent__body {
+        padding: 3rem 2rem;
+    }
+}
+
+
+.form-control {
+    &.error {
+        border: 1px solid red;
+    }
+}

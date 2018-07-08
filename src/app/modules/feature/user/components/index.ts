@@ -1,0 +1,1 @@
+export { HomeComponent as UserHomeComponent } from './home/home.component';

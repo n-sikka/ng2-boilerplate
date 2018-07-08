@@ -1,0 +1,59 @@
+html, body {
+    font-size: $base-font-size;
+    color: $font-black;
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: $link-color;
+}
+// BOOTSTRAP OVERRIDE
+
+/*
+    Colors
+*/
+/*
+    Buttons
+*/
+.btn {
+    border-radius: $base-border-radius !important;
+    min-width: $btn-min-width;
+}
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+
+/*
+    Forms
+*/
+
+.form-control {
+    border-radius: $base-border-radius !important;
+    box-shadow: none !important;
+    &:focus,
+    &:active {
+        box-shadow: none !important;
+    }
+}
+
+/*
+    Cards
+*/
+
+.card {
+    border-radius: $base-border-radius !important;
+}
